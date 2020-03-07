@@ -49,6 +49,7 @@ img{
 
 /**header**/
 
+
 @media (min-width:768px) {
     .barra{
         display:flex;
@@ -60,13 +61,17 @@ img{
 /**side header**/
 
 .site-header{
-    background-image: url(../img/main.jpg);
+    background-image: url(../img/head.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    height: 50rem;
+    height: 30rem;
 }
-
+@media (min-width:360px) {
+    .site-header{
+        height: 40rem;
+    }
+}
 .site-header a{
     color: white;
     text-decoration: none;
@@ -80,12 +85,14 @@ img{
 .site-header h1 span{
     font-weight: 700;
 }
-
-.navegacion{
+/**navegacion***/
+.navegacion a{
     text-align: center;
     display: block;
     font-size: 1.8rem;
 }
+
+/**header**/
 .texto-header{
     color:white;
     text-align: center;

@@ -9,9 +9,14 @@
     <link rel='stylesheet'  href='css/main.css'>
     <link rel='stylesheet'  href='css/normalize.css'>
     
-    
+    <link rel="stylesheet" href="scss/owl.carousel.css">
+    <link rel="stylesheet" href="scss/owl.theme.default.css">
 
     <script src='main.js'></script>
+
+
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/owl.carousel.js"></script>
 </head>
 <body>
     <header class="site-header">
@@ -27,11 +32,39 @@
                 </nav>
             </div> <!-- barra -->
             <div class="texto-header">
-                <h2>¿Sabes a donde ir?</h2>
-                <p>Aquí te digo dónde esta lo que buscas</p>
+                <h2 class="no-margin">¿Sábes a dónde ir?</h2>
+                <p class="no-margin slogan">Aquí encontrarás lo que buscas</p>
             </div>
 
         </div> <!-- contenedor -->
     </header>
+
+    <!-- Set up your HTML -->
+    <div class="owl-carousel owl-theme">
+        <div class="item"><img src="img/icons/doctor.png" alt=""></div>
+        <div class="item"><img src="img/icons/dress.png" alt=""></div>
+        <div class="item"><img src="img/icons/flash.png" alt=""></div>
+        <div class="item"><img src="img/icons/pencil-case.png" alt=""></div>
+    </div>
+
+
+    <script>
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+      </script>
 </body>
 </html>
